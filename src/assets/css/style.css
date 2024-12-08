@@ -1,0 +1,158 @@
+* {
+    font-family: 'Rajdhani';
+ }
+ h1,h2,h3,h4,h5{
+    font-family: 'Rajdhani';
+ }
+ p{
+    font-family: 'Rajdhani';
+ }
+ .font_banner_text{
+    font-size: 80px;
+ }
+.logo_color{
+    color: #E00000 !important;
+}
+.navbar {
+    background-color: transparent; /* Dark background */
+    padding: 10px 20px; /* Adjust padding */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust logo size */
+    font-weight: bold;
+    color: #FF0000; /* Red text for "CASINO" */
+}
+
+.nav-link {
+    color: #fff; /* White text */
+    font-size: 1rem; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    transition: color 0.3s; /* Smooth hover transition */
+}
+
+.nav-link:hover {
+    color: #FF0000; /* Red hover effect */
+}
+
+.navbar-nav {
+    align-items: center; /* Vertically center links */
+}
+
+
+.gradient-background {
+    backdrop-filter: blur(10px);
+    background: #FFFFFF33;
+    transform: skew(-20deg);
+}
+.bg-image{
+    background-image: url("/baner_image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.btn_background_color{
+    background: #E00000;
+    transform: skew(-20deg);
+}
+.banner_text_color{
+    color:#E00000;
+}
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #181818 !important;
+}
+.border-bottom_color{
+    border-bottom: 2px solid #E00000;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+
+.color_background {
+    margin-top: 100px;
+    border: 5px solid #E00000;
+    padding: 30px;
+  }
+
+  .game-icon {
+    width: 100px;
+    height: 70px;
+    display: block;
+  }
+
+  .game-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #ddd;
+  }
+
+  .game-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    margin-top: 30px;
+  }
+ 
+
+/* //////////////////////////////////////////////////////////////// */
+
+.bg-image-about{
+    background-image: url("/about.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+.bg-image_second{
+    background-image: url("/about_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+
+.bg-image_contact{
+    background-image: url("/contact-2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+.bg-image-footer{
+    background-image: url("/footer.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+
+
+.six{
+    /* background-image: url("/last.png"); */
+    background-image: url("/about_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+input::placeholder {
+    color: white; /* Change placeholder text color to white */
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+.input_field{
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+.section-padding-contact{
+    padding-bottom: 200px;
+    background: #181818 !important;
+
+}
+.mobile_view_btn{
+    text-align: end;
+}
