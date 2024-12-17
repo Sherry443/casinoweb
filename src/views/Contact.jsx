@@ -1,30 +1,47 @@
 import React from 'react'
 
+import Quantino_Subscribe from "./Components/Quantino_Subscribe";
+
 const Contact = () => {
   return (
     <>
 
-      <section className='bg-image_contact w-100' style={{ paddingTop: '70px' }}>
+      <section className='bg-image_contact w-100'>
         <div className='container'>
-          <div className='row justify-content-center align-items-end' style={{ height: '700px', paddingBottom: '150px' }}>
+          <div className='row justify-content-center align-items-end bread_heading_height'>
             <div className='col-lg-8'>
-              <h1 className='text-uppercase text-white text-center fw-bold breadcrump_size'>CONTACT US</h1>
-              <h3 className='text-uppercase text-center banner_text_color fw-bold '>CASINO CONQUEST</h3>
+              <h1 className='text-uppercase text-white text-center nav_text all_breadcrumb_font_size'>CONTACT US</h1>
+              <h3 className='text-uppercase text-center banner_text_color nav_text fs-1'>CASINO CONQUEST</h3>
             </div>
           </div>
         </div>
       </section>
 
-      <section className='w-100 second_section_background' style={{ paddingTop: '100px' }}>
+      <section className='w-100' style={{ paddingTop: '100px' }}>
         <div className='container'>
-          <div className='row justify-content-center align-items-center'>
-            <div className='col-lg-10 col-sm-12'>
-              <img src='/public/contact_page_data.png' className='w-100' />
+          <div className='row justify-content-center align-items-center' style={{ position: 'relative' }}>
+            <div className='col-lg-10 col-sm-12 position-relative'>
+              <img src='/contact.png' className='w-100' />
+              <button className="text-white px-4 py-2 position-absolute top-50 start-50 w-auto about_btn_hover contact_btn_adjust" style={{ borderRadius: "2px" }}>
+                Get Direction
+              </button>
             </div>
-
           </div>
         </div>
       </section>
+
+
+
+
+      {/* <section className="w-100 second_section_background" style={{ paddingTop: '100px', position: 'relative' }}>
+        <div className="container">
+          <div className="row justify-content-center align-items-center">
+            <button className="text-white px-4 py-2 position-absolute center-button w-auto about_btn_hover">
+              Get Direction
+            </button>
+          </div>
+        </div>
+      </section> */}
 
 
 
@@ -110,98 +127,58 @@ const Contact = () => {
             </div>
           </div>
           <div className='row justify-content-center align-items-center'>
-            <div className='col-lg-10 col-sm-12'>
-              <div className='row'>
-                <div className='col-lg-6'>
-                  <div className='mb-2'>
-                    <input type='text' className='w-100 input_field' placeholder='Your Name' />
+            <div className='col-lg-10 col-sm-12 px-4'>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="mb-2">
+                    <input type="text" className="w-100 input_field" placeholder="Your Name" />
                   </div>
-                  <div className='mb-2'>
-                    <input type='text' className='w-100 input_field' placeholder='Email Address' />
+                  <div className="mb-2">
+                    <input type="text" className="w-100 input_field" placeholder="Email Address" />
                   </div>
-                  <div className='mb-2'>
-                    <input type='text' className='w-100 input_field' placeholder='Phone Number' />
+                  <div className="mb-2">
+                    <input type="text" className="w-100 input_field" placeholder="Phone Number" />
                   </div>
                 </div>
-                <div className='col-lg-6'>
-                  <div className='mb-2'>
-                    <input type='text' className='w-100 input_field' style={{ height: '100px' }} placeholder='Your Message' />
+                <div className="col-lg-6">
+                  <div className="mb-2">
+                    <textarea
+                      className="w-100 input_field"
+                      rows="4"
+                      placeholder="Your Message"
+                    ></textarea>
                   </div>
-                  <div className='row'>
-                    <div className='col-lg-6'>
-                      <div className='mb-2'>
-                        <input type='text' className='w-100 input_field' placeholder='Phone Number' />
+                  <div className="row align-items-center mt-4">
+                    <div className="col-lg-6">
+                      <div className="mb-2">
+                        <select className="w-100 input_field" style={{ padding: "10px" }}>
+                          <option value="" disabled selected>
+                            Select Department
+                          </option>
+                          <option value="casino">Casino M8trix</option>
+                          <option value="poker">Poker Desk</option>
+                          <option value="zone8">Zone 8 Sports</option>
+                          <option value="events">Events Department</option>
+                        </select>
                       </div>
                     </div>
-                    <div className='col-lg-6 align-self-center'>
-                      <div className='text-end'>
-                        <button className='text-white btn_background_color px-4 py-2 border-0'>Send</button>
-                      </div>
+                    <div className="col-lg-6 text-end">
+                      <button className="text-white btn_background_color px-4 py-2 border-0 small_screen_button_width btn_hover">
+                        Send
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+
+
             </div>
 
           </div>
         </div>
       </section>
 
-
-      <section
-        className="discover-section"
-        style={{
-          background: 'linear-gradient(89.29deg, #E00000 -1.27%, #181818 103.48%)',
-          padding: "100px 0",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
-            zIndex: 1,
-          }}
-        ></div>
-
-        <div
-          className="container text-white"
-          style={{
-            position: "relative",
-            zIndex: 2,
-          }}
-        >
-          <div className='row'>
-            <div className='col-lg-4'>
-              <div>
-                <h1 className='text-uppercase pt-5'>
-                  CONQUEST REWARDS
-                </h1>
-              </div>
-              <h5 className='text-uppercase text-white'>
-                GET FRESH NEWS EVERY MONTH!
-              </h5>
-            </div>
-            <div className='col-lg-8 align-self-center'>
-              <div className='row'>
-                <div className='col-lg-9 mobile_view_btn mb-3'>
-                  <input type='text' placeholder='Your name' style={{ background: '#FFFFFF33' }} className='my-3 border-0 px-2 py-2 text-white w-75' /><br />
-                  <input type='email' placeholder='Your email' style={{ background: '#FFFFFF33' }} className='border-0 px-2 py-2 text-white w-75  ' />
-                </div>
-                <div className='col-lg-3 align-self-center'>
-                  <div className='mobile_view_btn'>
-                    <button className='text-white btn_background_color px-4 py-2 border-0'>Subscribe</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Quantino_Subscribe />
 
     </>
   )

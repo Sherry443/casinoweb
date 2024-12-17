@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+.game-table{
+padding: auto;
+}
+  /* Game Table Container */
+  .table-container {
+    margin: 40px auto;
+    width: 80%;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px red;
+    position: relative;
+  }
+  
+  /* Title Styling */
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .last-update {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #bdbdbd;
+  }
+  
+  /* Red Line Above and Below */
+  .table-container::before,
+  .table-container::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #ff0000;
+    left: 20px;
+    right: 20px;
+    top: 10px;
+    box-shadow: 0 0 5px red;
+  }
+  
+  .table-container::after {
+    top: unset;
+    bottom: 10px;
+  }
+  thead{
+    border-color: #ffffff !important;
+    border-style: solid !important;
+    color: white !important;
+    width: 8% !important;
+    border-width: 0 !important;
+    border: 1px white solid;
+  }
+  tbody, td, tfoot, th, tr {
+    border-color: #ffffff !important;
+    border-style: solid !important;
+    color: white !important;
+    width: 8% !important;
+    border-width: 0 !important;
+}
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid #444;
+  }
+  
+  /* Header Styling */
+  th {
+    background-color: #111;
+    font-weight: bold;
+  }
+  
+  /* Active Table Number (Red) */
+  td:nth-child(2) {
+    color: #ff0000 !important;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Alternate Row Color */
+  tr:nth-child(even) {
+    background-color: #1e1e1e;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #151515;
+  }
+  
+  /* Waiting List Styling */
+  .waiting-list {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+  
+  .waiting-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .waiting-list li {
+    margin: 5px 0;
+  }
+  

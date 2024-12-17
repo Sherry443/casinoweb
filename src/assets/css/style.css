@@ -5,56 +5,122 @@
     font-family: 'Rajdhani';
  }
  p{
-    font-family: 'Rajdhani';
+    font-family: "Nunito", sans-serif;
+    font-size: 15px !important;
  }
  .font_banner_text{
-    font-size: 80px;
+    font-size: 96px;
  }
 .logo_color{
     color: #E00000 !important;
 }
 .navbar {
-    background-color: transparent; /* Dark background */
-    padding: 10px 20px; /* Adjust padding */
+    background-color: transparent; 
+    padding: 10px 20px; 
 }
 
 .navbar-brand {
-    font-size: 1.5rem; /* Adjust logo size */
+    font-size: 1.5rem; 
     font-weight: bold;
-    color: #FF0000; /* Red text for "CASINO" */
+    color: #FF0000; 
 }
 
 .nav-link {
-    color: #fff; /* White text */
-    font-size: 1rem; /* Adjust font size */
-    text-transform: uppercase; /* Uppercase text */
-    transition: color 0.3s; /* Smooth hover transition */
+    color: #fff; 
+    font-size: 1rem; 
+    text-transform: uppercase;
+    transition: color 0.3s; 
 }
 
 .nav-link:hover {
-    color: #FF0000; /* Red hover effect */
+    color: #FF0000; 
 }
 
 .navbar-nav {
-    align-items: center; /* Vertically center links */
+    align-items: center; 
 }
 
+.banner_description{
+  font-size: 20px !important;
+}
 
 .gradient-background {
-    backdrop-filter: blur(10px);
+  position: relative;
+  background: transparent; 
+}
+
+.gradient-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff54;
+  transform: skew(-20deg);
+  z-index: -1; 
+  pointer-events: none; 
+  border-radius: 0px 0px 5px 5px;
+}
+
+.nav_text{
+  font-weight: 900 !important;
+}
+
+.breadcrumb_text{
+  font-weight: 900 !important;
+}
+
+/* .gradient-background {
+    backdrop-filter: blur(2px);
     background: #FFFFFF33;
     transform: skew(-20deg);
-}
+} */
 .bg-image{
-    background-image: url("/baner_image.webp");
+    background: 
+    linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+    url("/baner_image_updated.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
-.btn_background_color{
+/* .btn_background_color{
     background: #E00000;
     transform: skew(-20deg);
+} */
+
+/* //////////////////////////////////////////// */
+
+.btn_background_color {
+  position: relative;
+  display: inline-block;
+  background: #e00000;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px; 
+  border: none;
+  cursor: pointer;
+  transform: skew(-15deg); 
+  transition: background 0.3s ease;
 }
+
+.btn_background_color span {
+  display: inline-block;
+  transform: skew(15deg); 
+}
+
+.btn_background_color:hover {
+  background: #b00000; 
+}
+
+
+
+/* ///////////////////////////////////////// */
+
+
+
 .banner_text_color{
     color:#E00000;
 }
@@ -70,11 +136,7 @@
 /* ////////////////////////////////////////////////////////////////////////////// */
 
 
-.color_background {
-    margin-top: 100px;
-    border: 5px solid #E00000;
-    padding: 30px;
-  }
+
 
   .game-icon {
     width: 100px;
@@ -101,53 +163,56 @@
 /* //////////////////////////////////////////////////////////////// */
 
 .bg-image-about{
-    background-image: url("/about.webp");
+    background: 
+    linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+    url("/about.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%; 
 }
 
 .bg-image_second{
-    background-image: url("/about_2.png");
+    background-image: url("/about_2.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: 50% 50%; 
 }
 
 
 .bg-image_contact{
-    background-image: url("/contact-2.webp");
+    background: 
+    linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+    url("/contact_1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%; 
 }
 .bg-image-footer{
-    background-image: url("/footer.webp");
+  background: linear-gradient(179.64deg, rgba(24, 24, 24, 0) 0.31%, rgba(24, 24, 24, 0.4) 83.79%),url("/footer.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%; 
+    background-position: 50% 20%;
 }
 
 
 
 .six{
-    /* background-image: url("/last.png"); */
     background-image: url("/about_2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-input::placeholder {
-    color: white; /* Change placeholder text color to white */
-    opacity: 1; /* Ensure the placeholder is fully opaque */
+/* input::placeholder {
+    color: white; 
+    opacity: 1; 
 }
 .input_field{
     background: transparent;
     border: transparent;
     border-bottom: 2px solid white;
-    padding: 10px;
-}
+    padding: 20px;
+} */
 .section-padding-contact{
     padding-bottom: 200px;
     background: #181818 !important;
@@ -155,4 +220,438 @@ input::placeholder {
 }
 .mobile_view_btn{
     text-align: end;
+}
+/* ///////////////////////////////////////////////////////////////// */
+
+.banner_height{
+    height: 700px;
+}
+
+.girl_cta_height{
+    height: 500px;
+}
+
+.about_btn_hover {
+    background-color: transparent;
+    border: 2px solid white;
+    transform: skew(-20deg) !important;
+    color: white;
+    transition: all 0.25s ease-out;
+    box-shadow: none; 
+}
+
+.about_btn_hover:hover {
+    background-color: black; 
+    color: white; 
+    box-shadow: 0px -1px 18px 11px rgb(167 166 166 / 58%); 
+}
+.contact_btn_adjust {
+    transform: translate(-251%, -50%) skew(-20deg) !important;
+}
+
+
+.btn_hover {
+    transition: all 0.25s ease-out; 
+    box-shadow: none; 
+}
+
+.btn_hover:hover {
+    color: white; 
+    box-shadow: rgba(167, 166, 166, 0.58) 0px -1px 12px 0px; 
+}
+.small_screen_image_height_new_change:hover {
+    transform: skew(-20deg) translateY(-20px) !important; 
+  }
+
+
+.image-container:hover .image1 {
+    transform: translateY(0px) !important; 
+  }
+  
+  .image-container:hover .image2 {
+    opacity: 1 !important; 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .image-container:hover .heading-description {
+    opacity: 1 !important;
+  }
+
+  .font_color_join{
+    color: #675d5d !important;
+  }
+
+  /* .font_color_join:hover{
+    color: #E00000 !important;
+    cursor: pointer;
+  } */
+
+
+  .font_color_join:hover .game-icon svg path {
+    fill: #E00000 !important;
+    fill-opacity: 1 !important; /* Ensure full color without dullness */
+    transition: fill 0.3s ease; /* Optional for smooth effect */
+}
+
+.font_color_join:hover h4 {
+    color: #E00000 !important; /* Maintain the h4 hover color */
+    transition: color 0.3s ease; /* Optional for smooth effect */
+}
+
+  .game-icon svg {
+    transition: fill-opacity 0.3s ease !important;
+  }
+  
+  .game-icon svg:hover {
+    fill-opacity: 1 !important; 
+  }
+
+
+  .image_hover {
+    transition: all 0.25s ease-out; 
+    box-shadow: none;
+  }
+  
+  .image_hover svg path {
+    fill: white; /* Keep the fill color as white */
+    stroke: white; /* Make sure the stroke color is also white */
+    stroke-width: 0px; /* Increase stroke width for a bolder appearance */
+  }
+  
+  .image_hover {
+    transition: all 0.25s ease-out;
+    box-shadow: none;
+  }
+  
+  .image_hover:hover {
+    color: white; /* Keep text color white on hover */
+    box-shadow: none;
+  }
+  
+  .image_hover:hover svg path {
+    fill: #8B0000; /* Change fill color to dark red on hover */
+    stroke: #8B0000; /* Change stroke color to dark red on hover */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.event_background_color {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  }
+
+  .event_background_color:hover {
+    background-color: white !important; /* Background color change on hover */
+    color: black; /* Text color change on hover */
+  }
+
+  .event_background_color:hover .text-white {
+    color: black !important; /* Text color inside div changes on hover */
+  }
+
+  .event_background_color .text-white {
+    color: white; /* Default text color */
+  }
+  .read_more_text{
+    color: white !important;
+  }
+
+
+  .image-container:hover {
+    transform: skew(-20deg) scale(1.13) !important; /* Slightly scale up on hover */
+  }
+  
+  .image1:hover {
+    transform: scale(1.05) !important; /* Scale the first image on hover */
+  }
+  
+  .image2:hover {
+    opacity: 1 !important; /* Show the second image on hover */
+  }
+  
+  .heading-description:hover {
+    opacity: 1 !important; /* Show the heading and description on hover */
+  }
+  
+
+
+
+  /* ///////////////////////////// */
+
+  .col5-background:hover .content {
+    background-color: rgba(255, 255, 255, 0.5); /* Higher opacity on hover */
+    color: #000; /* Black text for better contrast */
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+/* First Row Hover */
+.parent-row:hover .col5-background {
+  background: #f0f0f0 !important;
+  color: black !important;
+}
+
+.parent-row:hover .col5-text,
+.parent-row:hover .col5-title {
+  color: black !important;
+}
+
+.parent-row:hover .col4-image {
+  background-image: url('/baner_image_updated.png') !important; /* Replace with your second image */
+}
+
+/* Second Row Hover */
+.parent_row_second:hover .col5-background {
+  background: #f0f0f0 !important; /* Slightly different light background */
+  color: black !important;
+}
+
+.parent_row_second:hover .col5-text,
+.parent_row_second:hover .col5-title {
+  color: black !important;
+}
+
+.parent_row_second:hover .col4-image {
+  background-image: url('/about_2.png') !important; /* Replace with your first image */
+}
+
+
+
+
+/* ///////////////////////////// */
+
+
+.discover-section {
+  background-image: url('/bg-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 50px;
+  position: relative;
+  transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.discover-section:hover {
+  background-image: url('/about_2.webp');
+  opacity: 1; /* Ensure visibility */
+}
+
+.discover_heading{
+  font-size: 70px;
+  font-weight: 900;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181818CC;
+  z-index: 1;
+}
+
+.content-container {
+  position: relative;
+  z-index: 2;
+}
+
+.heading-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.horizontal-line {
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 116px;
+  height: 4px;
+  background-color: #ff0000;
+}
+
+.vertical-line {
+  position: absolute;
+  left: -60px;
+  width: 4px;
+  height: 116px;
+  background-color: #ff0000;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff0000;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+}
+
+select {
+  background-color: #333; /* Set the background color of the dropdown */
+  color: white; /* Set text color for selected options */
+  padding: 10px;
+}
+
+/* Style for the first option (the placeholder) */
+select option:first-child {
+  color: white; /* Placeholder text color */
+  background-color: #333; /* Background color for the placeholder */
+}
+
+/* Style for other options */
+select option {
+  color: black; /* Color for other options */
+  background-color: white; /* Background color for other options */
+}
+
+/* Style for the selected option when it's not the placeholder */
+select:focus option {
+  color: black;
+  background-color: white;
+}
+
+.image1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4c464682; /* Overlay color */
+  pointer-events: none; /* Ensures it doesn't block clicks */
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* event page style */
+
+.bg-image-event{
+  background: 
+  linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+  url("/event_image_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+.bg-image-gaming{
+  background: 
+  linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+  url("/game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+.bg-image-jack{
+  background: 
+  linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+  url("/jck.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+.quantino_subscribe{
+  /* background: linear-gradient(89.29deg, #660000 14.97%, #181818 103.48%), url('/last_image.jpeg'); */
+  background: linear-gradient(89.29deg, #66000096 14.97%, #181818d1 103.48%), url('/quanto.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 30px;
+  position: relative;
+}
+ 
+
+.bg-image-coummunity{
+  background: 
+  linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+  url("/coummunity.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+.bg-image-three{
+  background: 
+  linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.47) 56.5%, #181818 100%),
+  url("/three.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+.border_color_cmmunity{
+  /* padding: 40px; */
+  border: 3px solid rgba(224, 0, 0, 1);
+}
+
+
+
+.custom-input {
+  background: rgba(255, 255, 255, 0.2); /* Transparent background */
+  border: none; /* Remove border */
+  color: #fff; /* White text */
+  outline: none; /* Remove default focus outline */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.custom-input:focus {
+  outline: none; /* No outline */
+}
+
+.all_breadcrumb_font_size{
+  font-size: 150px;
+}
+
+.input_field {
+  padding: 20px;
+  background-color: transparent; /* Optional: Transparent background */
+  border: none; /* Removes all borders */
+  border-bottom: 2px solid white; /* Keeps the bottom border */
+  color: white !important; /* Makes the text color white */
+  outline: none; /* Removes the default focus outline */
+  font-size: 16px; /* Adjust font size */
+  transition: border-color 0.3s ease; /* Smooth transition for the border color */
+}
+
+.input_field::placeholder {
+  color: white !important; 
+  opacity: 1;
+}
+
+.input_field:focus {
+  border-bottom: 2px solid white; 
+  outline: none; 
+}
+
+
+.image_hover_last_section:hover{
+  background-color: black; 
+  color: white; 
+  box-shadow: 0px -1px 18px 11px rgb(167 166 166 / 58%); 
+}
+.small_screen_community_padding{
+  padding: 3rem;
+}
+.trigger-bot{
+  width: 90%;
+  transform: translate(50px, 0px);
 }
