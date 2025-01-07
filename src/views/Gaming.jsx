@@ -2,12 +2,14 @@ import React from "react";
 import Card from "./Components/Card";
 import "../styles/Table.css"
 import Signup from "./Components/Signup";
+import GamesTableLayout from "./Components/GamesTableLayout";
 
 
 const Gaming = () => {
   
   return (
     <>
+   
     <section className='bg-image-gaming w-100' style={{ paddingTop: '70px' }}>
     <div className='container newsss'>
       <div className='row justify-content-center align-items-end pb-5 banner_height'>
@@ -67,152 +69,14 @@ const Gaming = () => {
                 }}
               ></div>
               <div style={{
-                padding: "4rem 0px 4rem 0px",
+                padding: "1.5rem 0px 1.5rem 0px",
                 borderBottom: "2px solid rgb(255, 0, 0)",
                 borderLeft: "2px solid rgb(255, 0, 0)",
                 borderRight: "2px solid rgb(255, 0, 0)",
               }}>
 
-<table className="game-table">
-          <thead>
-            <tr>
-              <th>Game</th>
-              <th>Active Tables</th>
-              <th>Min/Max</th>
-              <th>PIT</th>
-              <th>Game/Limit</th>
-              <th>Waiting List</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>No limit holdem</td>
-              <td className="active">2</td>
-              <td>1 - 2 - 3</td>
-              <td>Poker</td>
-              <td>No limit holdem<br />$1 - $2 - $3</td>
-              <td>
-                1. MB<br />
-                2. JC<br />
-                3. JoseJose<br />
-                4. David R.<br />
-                5. Joe<br />
-                6. Victor<br />
-                7. Alex
-              </td>
-            </tr>
-            <tr>
-              <td>No limit holdem</td>
-              <td className="active">1</td>
-              <td>2 - 3 - 5</td>
-              <td>Poker</td>
-              <td>No limit holdem<br />$2 - $3 - $5</td>
-              <td>
-                1. Daniel K.<br />
-                2. JL<br />
-                3. DDN2<br />
-                4. Mike<br />
-                5. Rafa<br />
-                6. SL<br />
-                7. JoseJose
-              </td>
-            </tr>
-            <tr>
-              <td>Poker-side TCP</td>
-              <td className="active">1</td>
-              <td>5 - 100</td>
-              <td>Cal</td>
-            </tr>
-            <tr>
-              <td>Baccarat Squeeze</td>
-              <td className="active">3</td>
-              <td>10 - 100</td>
-              <td>Cal</td>
-            </tr>
-            <tr>
-              <td>Pure 21.5 Blackjack</td>
-              <td className="active">1</td>
-              <td>25 - 100</td>
-              <td>Cal</td>
-            </tr>
-            <tr>
-              <td>Double Hand Poker Halfmoon</td>
-              <td className="active">3</td>
-              <td>5 - 100</td>
-              <td>Cal</td>
-            </tr>
-            <tr>
-              <td>Three Card Poker</td>
-              <td className="active">2</td>
-              <td>10 - 100</td>
-              <td>Cal</td>
-            </tr>
-            <tr>
-              <td className="inactive">Ultimate Texas Hold Em</td>
-              <td className="active">2</td>
-              <td>5 - 100</td>
-              <td>Cal</td>
-            </tr>
-          </tbody>
-        </table>
-
-        
-
-                <div className="row justify-content-center">
-                  <div className="col-md-2 font_color_join mb-3">
-                    <div className="game-icon w-100 text-center mb-2">
-                     
-                    </div>
-                  
-                  </div>
-                  <div className="col-md-2 font_color_join mb-3">
-                    <div className="game-icon w-100 text-center mb-2">
-                      {/* <img src="/3-2.PNG" alt="Pure 21.5 Icon" style={{ width: "60px" }} /> */}
-                  
-   
-     
-      
-     
-                    </div>
-               
-                  </div>
-                  <div className="col-md-2 font_color_join mb-3">
-                    <div className="game-icon w-100 text-center mb-2">
-                      {/* <img src="/3-3.PNG" alt="Baccarat Icon" style={{ width: "60px" }} /> */}
-                    
-                    </div>
-              
-                  </div>
-                  <div className="col-md-2 font_color_join mb-3">
-                    <div className="game-icon w-100 text-center mb-2">
-                      {/* <img src="/3-5.PNG" alt="AKA PAI GOW Icon" style={{ width: "60px" }} /> */}
-                    
-
-                    </div>
-               
-                  </div>
-                  <div className="col-md-2 font_color_join mb-3">
-                    <div className="game-icon w-100 text-center mb-2">
-                      {/* <img src="/3-6.PNG" alt="PAI GOW TILES Icon" style={{ width: "60px" }} /> */}
-
-                     
-                    </div>
-                  
-                  </div>
-                </div>
-                <div className="text-center mt-5">
-                  {/* <button
-                    className="text-white btn_background_color px-4 py-2 border-0 btn_hover"
-                    style={{
-                      backgroundColor: "#FF0000",
-                      borderRadius: "3px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    ALL GAMES
-                  </button> */}
-                
-                </div>
+           <GamesTableLayout/>
+           
               </div>
             </div>
           </div>

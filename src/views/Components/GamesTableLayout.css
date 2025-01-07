@@ -1,0 +1,20 @@
+.games-table-layout {
+  display: flex;
+  height: 450px;
+}
+
+.games-table-left {
+  width: 90.7vw;
+  position: absolute;
+
+}
+
+.games-table-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 2.1rem;
+  width: 100vw;
+}
+

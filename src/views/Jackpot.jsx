@@ -1,6 +1,6 @@
 import React from 'react'
 import Quantino_Subscribe from "./Components/Quantino_Subscribe";
-import Card from './Components/Card';
+import Cards from './Components/Cards';
 import "../styles/jackpot.css"
 import { FaHeart, FaGem } from "react-icons/fa"; // Example icons
 export default function Jackpot() {
@@ -93,47 +93,47 @@ Urna sodales commodo sit feugiat Enim ipsum nunc adipiscing ut sed viverra. Inte
       }}
     >
  
-      <Card
+      <Cards
         title="Baccarat Gold 1.0"
-        description="One of the most popular games at Casino M8trix."
-        buttonText="Play Now"
+        
+        buttonText="Trigger Hands"
         icon={<FaGem />}
         hoverColor="#f00"
       />
       
-      <Card
+      <Cards
         title="Baccarat Gold 1.0"
-        description="One of the most popular games at Casino M8trix."
-        buttonText="Play Now"
+        
+        buttonText="Trigger Hands"
         icon={<FaGem />}
         hoverColor="#f00"
       />
       
-        <Card
+        <Cards
         title="Baccarat Gold 1.0"
-        description="One of the most popular games at Casino M8trix."
-        buttonText="Play Now"
+        
+        buttonText="Trigger Hands"
         icon={<FaGem />}
         hoverColor="#f00"
       />
-              <Card
+              <Cards
         title="Baccarat Gold 1.0"
-        description="One of the most popular games at Casino M8trix."
-        buttonText="Play Now"
+        
+        buttonText="Trigger Hands"
         icon={<FaGem />}
         hoverColor="#f00"
       />
-              <Card
+              <Cards
         title="Baccarat Gold 1.0"
-        description="One of the most popular games at Casino M8trix."
-        buttonText="Play Now"
+        
+        buttonText="Trigger Hands"
         icon={<FaGem />}
         hoverColor="#f00"
       />
-              <Card
+              <Cards
         title="Baccarat Gold 1.0"
-        description="One of the most popular games at Casino M8trix."
-        buttonText="Play Now"
+        
+        buttonText="Trigger Hands"
         icon={<FaGem />}
         hoverColor="#f00"
       />
@@ -198,7 +198,7 @@ Urna sodales commodo sit feugiat Enim ipsum nunc adipiscing ut sed viverra. Inte
 
       {/* Trigger Hand Section */}
       <div className="trigger-hand">
-        <p className="trigger-text">Trigger hand</p>
+        <h1 className="trigger-text">Trigger hand</h1>
         <h2 className="trigger-condition">QUAD 4's OR BETTER BEAT</h2>
 
         
@@ -208,33 +208,7 @@ Urna sodales commodo sit feugiat Enim ipsum nunc adipiscing ut sed viverra. Inte
  
 
       {/* Promotions Section */}
-      <div className="promos-section">
-        <h2 className="promos-heading">Other promos</h2>
-        <table className="promos-table">
-          <tbody>
-            <tr>
-              <td>High Hand</td>
-              <td>$ 100</td>
-              <td>MONS & TUES 12a - 5a & 10a - 1p / HOURLY</td>
-            </tr>
-            <tr>
-              <td>Rack Attack</td>
-              <td>$ 100 / $ 300</td>
-              <td>SUN - THUR 2a - 5a & SUN - THUR 4p - 7p / HOURLY</td>
-            </tr>
-            <tr>
-              <td>Progressive Royal Flush</td>
-              <td>24 x 7</td>
-              <td>$ 500 SEED + $ 50 ADDED EACH MONTH</td>
-            </tr>
-            <tr>
-              <td>Mini Bad Beat Jackpot</td>
-              <td>$ 10,000</td>
-              <td>24/7 ACES FULL OF QUEENS OR BETTER BEATEN</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    
       </div>
     <Quantino_Subscribe />
   

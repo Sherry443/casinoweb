@@ -2,7 +2,7 @@ import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./views/partials/Header";
 import Footer from "./views/partials/Footer";
-import ThreeCard from "./views/ThreeCard";
+
 
 
 // Lazy components
@@ -16,11 +16,14 @@ const LazyComponents = {
 	Gaming: lazy(() => import("./views/Gaming")),
 	Jackpot: lazy(() => import("./views/Jackpot")),
 	ThreeCard: lazy(() => import("./views/ThreeCard")),
+	GamingThree:  lazy(() => import("./views/GamingThree")),
+	
 };
 
 function App() {
 	return (
 		<>
+		
 			<div className="app-default " data-bs-theme="light">
 				<div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
 					<Suspense fallback={"loading"}>
@@ -34,6 +37,7 @@ function App() {
 							<Route path="/contact" element={<LazyComponents.Contact />} />
 							<Route path="/Jackpots" element={<LazyComponents.Jackpot />} />
 							<Route path="/three-card" element={<LazyComponents.ThreeCard />} />
+							<Route path="/gaming" element={<LazyComponents.GamingThree />} />
 						</Routes>
 						<Footer />
 					</Suspense>

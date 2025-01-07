@@ -1,0 +1,57 @@
+.games-table-rows {
+  width: 620px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.game-row {
+  width: 145%;
+  height: 40px;
+  background-color: #181818;
+  border-bottom: 0.5px solid #ffffff33;
+}
+
+.game-row-content {
+       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      padding: 0 9rem 0px 0px;
+      text-align: justify;
+      margin-left: 3rem;
+}
+
+.game-name {
+  width: 200px;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 12px;
+  color: #ffffff;
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+.active-tables {
+  width: 80px;
+  font-size: 18px;
+  color: #e00000;
+  text-align: center;
+}
+
+.min-max {
+  width: 80px;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pit {
+  width: 80px;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+

@@ -112,27 +112,34 @@ body {
     border: 2px solid red;
     margin: 20px auto;
     padding: 15px 10px;
-    width: 70%;
+    width: 80%;
+    height: 150px;
     position: relative;
     background-color: transparent;
     box-shadow: 0 0 10px red;
   }
   
   .trigger-text {
-    font-size: 16px;
+    font-size: 43px;
     color: #fff;
     position: absolute;
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background: #111;
+    background: #181818;
     padding: 0 10px;
+    margin-top: -0.8rem;
   }
   
   .trigger-condition {
-    font-size: 20px;
-    font-weight: bold;
-  }
+    font-size: 50px;
+    width: 1100px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   /* Disclaimer */
   .disclaimer {

@@ -68,9 +68,9 @@ const Header = () => {
                                 <Link className="nav-link text-white fw-semibold mx-3 py-3" to={"/About"}>ABOUT</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white fw-semibold mx-3 py-3" href={"/three-card"}>
+                                <Link className="nav-link text-white fw-semibold mx-3 py-3" to={"/gaming"}>
                                     TOURNAMENTS
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link text-white fw-semibold mx-3 py-3" to={"/Contact"}>CONTACT</Link>
