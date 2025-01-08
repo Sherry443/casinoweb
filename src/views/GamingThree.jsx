@@ -1,6 +1,7 @@
 import "./GamingThree.css";
 import playingcard from "../assets/uploads/playing.png"
 import "../styles/Table.css"
+import { Link } from "react-router-dom";
 import Signup from "./Components/Signup";
 export default function GamingThree() {
   const payoffData = [
@@ -29,7 +30,8 @@ export default function GamingThree() {
             &lt; Back to gaming
           </a>
           <h1 className="title-game">Three Card Poker</h1>
-          <button className="btn_background_color">PLAY NOW</button>
+          <button className="btn_background_color">
+           <Link className="nav-link text-white fw-semibold" to={"/three-card"}> PLAY NOW </Link></button>
         </div>
         <div className="image-cont">
           <img
